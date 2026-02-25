@@ -37,7 +37,7 @@ export default defineConfig({
   reporter: [["line"], ["allure-playwright"],["html",{open:'never'}],["list"]],
   use: {
     trace: 'on-first-retry',
-    headless: false, // 👈 optional, for visible browser during debugging
+    headless: true, // 👈 optional, for visible browser during debugging
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     // storageState: './auth.json',
