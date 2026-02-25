@@ -1,0 +1,50 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - button "menu" [ref=e7] [cursor=pointer]:
+        - generic [ref=e9]: menu
+      - img [ref=e10]
+      - 'generic "Logged in User: Rajan Raman" [ref=e11]': Hello, Rajan Raman
+  - generic [ref=e13]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: search
+      - textbox "search" [ref=e20]:
+        - /placeholder: Search
+      - button "Show Search Options" [ref=e21] [cursor=pointer]:
+        - generic [ref=e23]: tune
+    - generic [ref=e26]:
+      - heading "Busy Teams" [level=1] [ref=e28]
+      - generic "Create" [ref=e30]:
+        - button "create" [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: add_circleasd
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e37]: 2 results
+          - button "Disabled" [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: Disabled
+            - generic [ref=e40]: close
+        - generic [ref=e43]:
+          - generic [ref=e46] [cursor=pointer]:
+            - generic [ref=e48]:
+              - generic "cwfhhnzl" [ref=e50]
+              - generic "India" [ref=e52]
+              - generic [ref=e54]: 9527067105 | user_1769155597045@mail.busy.in
+              - generic "23-Jan-26" [ref=e56]
+              - button "Access Account" [ref=e57]:
+                - generic [ref=e59]: lock_open
+            - button "more info" [ref=e61]:
+              - generic [ref=e63]: more_vert
+          - generic [ref=e66] [cursor=pointer]:
+            - generic [ref=e68]:
+              - generic "gtdrwvyu" [ref=e70]
+              - generic "India" [ref=e72]
+              - generic [ref=e74]: 9394758771 | user_1769085804383@mail.busy.in
+              - generic "22-Jan-26" [ref=e76]
+              - button "Access Account" [ref=e77]:
+                - generic [ref=e79]: lock_open
+            - button "more info" [ref=e81]:
+              - generic [ref=e83]: more_vert
+```
