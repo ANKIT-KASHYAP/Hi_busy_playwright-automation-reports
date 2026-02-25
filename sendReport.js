@@ -22,6 +22,12 @@ async function sendEmail() {
       <h3>Automation Execution Completed</h3>
       <p>Please check the report using below link:</p>
       <a href="https://ankit-kashyap.github.io/Hi_busy_playwright-automation-reports/">
+            style="display:inline-block;
+              padding:10px 20px;
+              background-color:#0078D7;
+              color:white;
+              text-decoration:none;
+              border-radius:5px;">
        View Automation Report
       </a>
       <br><br>
