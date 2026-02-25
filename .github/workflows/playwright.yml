@@ -29,7 +29,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run specific Playwright test
-        run: npx playwright test tests/Admin_as_admin/google.spec.js --project=chromium --reporter=html
+        run: npx playwright test tests/Admin_as_admin/google.spec.js --project=chromium --reporter=line,html,allure-playwright
 
       - name: Deploy Playwright Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
