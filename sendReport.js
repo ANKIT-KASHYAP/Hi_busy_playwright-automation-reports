@@ -1,8 +1,6 @@
-// import fs from 'fs';
-// import path from 'path';
-import nodemailer from 'nodemailer'
+//const nodemailer = require("nodemailer");
+import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-import path from 'path';
 
 dotenv.config();
 
@@ -11,30 +9,29 @@ async function sendEmail() {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
+      user: "ankit.kashyap@mail.busy.in",
+      pass: 'jldyqumbjsvetwmc'
     }
   });
 
   let mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_TO,
-    subject: "Playwright Automation Test Report",
-    text: "Hi Sir, Please find attached Playwright HTML and Allure reports.",
-    attachments: [
-      {
-        filename: "PlaywrightReport.zip",
-        path: "./playwright-report"
-      },
-      {
-        filename: "AllureReport.zip",
-        path: "./allure-report"
-      }
-    ]
+    from: "ankit.kashyap@mail.busy.in",
+    to: "27ankitkashyap@gmail.com",
+    subject: "Playwright Automation Execution Report",
+    html: `
+      <h3>Automation Execution Completed</h3>
+      <p>Please check the report using below link:</p>
+      <a href="https://ANKIT-KASHYAP.github.io/Hi_busy_playwright-automation-reports/">
+       View Automation Report
+      </a>
+      <br><br>
+      Regards,<br>
+      Ankit
+    `
   };
 
   await transporter.sendMail(mailOptions);
-  console.log("Report sent successfully!");
+  console.log("Report link sent successfully!");
 }
 
 sendEmail();
