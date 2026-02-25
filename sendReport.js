@@ -21,7 +21,7 @@ async function sendEmail() {
     html: `
       <h3>Automation Execution Completed</h3>
       <p>Please check the report using below link:</p>
-      <a href="https://ANKIT-KASHYAP.github.io/Hi_busy_playwright-automation-reports/">
+      <a href="https://ankit-kashyap.github.io/Hi_busy_playwright-automation-reports/">
        View Automation Report
       </a>
       <br><br>
