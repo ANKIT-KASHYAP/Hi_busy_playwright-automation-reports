@@ -29,7 +29,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run specific Playwright test
-        run: npx playwright test tests/Admin_as_admin/Access_and_create_BTPU.spec.js --project=chromium --reporter=html
+        run: npx playwright test tests/Admin_as_admin/update_permission.spec.js --project=chromium --reporter=html
 
       - name: Deploy Playwright Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
