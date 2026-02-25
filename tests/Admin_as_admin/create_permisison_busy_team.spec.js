@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import  {login_process} from '../utils/Common_login_process.js'
+import  {login_process} from '../plawright_practice/Common_login_process.js'
 test.use({
     launchOptions:{
         slowMo:200,

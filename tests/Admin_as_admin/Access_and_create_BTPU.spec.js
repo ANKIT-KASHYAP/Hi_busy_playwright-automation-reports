@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { generateUserData } from '../utils/prepare_user_info_random_data.js';
-import  {login_process} from '../utils/Common_login_process.js'
+import { generateUserData } from '../../tests/utils/prepare_user_info_random_data.js';
+import  {login_process} from '../../tests/utils/Common_login_process.js'
 
 test.use({
   launchOptions: {
