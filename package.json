@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-  "test": "playwright test tests/Admin_as_admin/google.spec.js --project=Admin_as_admin",
+  "test": "playwright test tests/Admin_as_admin --project=Admin_as_admin",
   "report": "npx allure generate ./allure-results --clean -o ./allure-report",
   "send-report": "node sendReport.js",
   "full-run": "npm run test && npm run report && npm run send-report"
