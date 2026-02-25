@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import dotenv from 'dotenv';
 import pool from '../../dbConfig.js'
-import { installSubscription } from '../subscriptionInstall.spec.js';
+import { installSubscription } from '../../tests/subscriptionInstall.spec.js';
 
 dotenv.config();
 //===============================================>>>>>>>>>>>>>>>>

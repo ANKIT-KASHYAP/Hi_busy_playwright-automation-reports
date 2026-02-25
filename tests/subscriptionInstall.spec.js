@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getSubscriptionDetails } from './Api_testing/getSubscriptionDetails.js';
+import { getSubscriptionDetails } from '../allfolders/Api_testing/getSubscriptionDetails.js';
 import dotenv from 'dotenv';
 
 dotenv.config();

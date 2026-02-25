@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import pool from '../../dbConfig.js'; // ✅ Import shared DB connection
 import dotenv from 'dotenv';
 import  {login_process} from '../utils/Common_login_process.js'
-import {generateUserData} from '../utils/prepare_user_info_random_data.js'
+import {generateUserData} from '../../tests/utils/prepare_user_info_random_data.js'
 
 test.use({
   launchOptions:{
